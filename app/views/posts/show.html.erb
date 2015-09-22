@@ -2,14 +2,13 @@
 
 <h2><%= single_post.title %></h2>
 <p><%= single_post.body %></p>
-<p> Comments:
-    <% single_post.comments.each do |comment| %>
+<p>
+  Comments:
+  <% single_post.comments.each do |comment| %>
     <%= comment.message %>
-    <% end %>
+  <% end %>
 </p>
 
-
-
-
-<p>This post has been published: <%=single_post.published %></p>
+<p>This post has been published: <%= single_post.published %></p
+<p>Would you like to add a <%= link_to("new comment", new_post_comment_path(single_post)) %></p>
 

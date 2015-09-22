@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
 
   def new
-    render template: 'posts/new.html.erb', locals: { new_post: Post.new }
+    render template: 'posts/show.html.erb', locals: { new_post: Post.new }
   end
 
   def create
