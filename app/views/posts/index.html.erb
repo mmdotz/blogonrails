@@ -1,0 +1,15 @@
+<h2>Blog posts</h2>
+<h3>You are viewing all (<%= posts.length %>) posts</h3>
+
+
+  <% posts.each do |post| %>
+<li>
+    <%= post.id %>.
+    <%= post.title %>
+</li>
+  <% end %>
+
+
+
+
+
