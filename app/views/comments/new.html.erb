@@ -1,0 +1,9 @@
+<h3> Enter your comment here.</h3>
+
+<%= form_for([post, new_comment]) do |f| %>
+  <p>
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+  </p>
+  <%= f.submit %>
+<% end %>

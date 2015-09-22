@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
   end
 
   def create
+    #params[:post_id]
   end
 
   def update

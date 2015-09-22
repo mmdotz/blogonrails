@@ -1,2 +1,13 @@
 <h3> Enter your comment here.</h3>
-form_for
+
+<%= form_for([post]) do |f| %>
+  <p>
+  <%= f.label :message %>
+  <%= f.text_field :message %>
+  </p>
+  <p>
+    <%= f.label :post_id %>
+    <%= f.select :post_id, Post.all.map { |p| [p.title, p.id] }, include_blank: true %>
+  </p>
+    <%= f.submit %>
+  <% end %>
