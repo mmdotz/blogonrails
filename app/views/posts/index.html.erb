@@ -5,7 +5,7 @@
   <% posts.each do |post| %>
 <li>
     <%= post.id %>.
-    <%= post.title %>
+    <a href= "/posts/<%= post.id %>"><%= post.title %></a>
 </li>
   <% end %>
 
