@@ -16,6 +16,10 @@ class CommentsController < ApplicationController
 
   def create
     #params[:post_id]
+    #For create to work, we must *require* that a parameter is sent with the name 'post_id'
+      new_comment = Comment.create(params[:message])
+      new_comment.save!
+      render template: 'comments/create.html.erb'
   end
 
   def update

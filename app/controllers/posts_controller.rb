@@ -13,6 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
+
   end
 
   def update
